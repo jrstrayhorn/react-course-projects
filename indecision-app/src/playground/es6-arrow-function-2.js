@@ -1,5 +1,3 @@
-"use strict";
-
 // // arguments object - no longer bound with arrow functions
 
 // const add = (a, b) => {
@@ -25,15 +23,11 @@
 // };
 // console.log(user.printPlacesLived());
 
-var multiplier = {
+const multiplier = {
     numbers: [1, 2, 3],
     multipleBy: 2,
-    multiply: function multiply() {
-        var _this = this;
-
-        return this.numbers.map(function (num) {
-            return num * _this.multipleBy;
-        });
+    multiply() {
+        return this.numbers.map((num) => num * this.multipleBy);
     }
 };
 
