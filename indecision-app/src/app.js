@@ -1,6 +1,7 @@
 console.log('App.js is running!');
 
 const app = {
+
     title: 'Indecision App',
     subtitle: 'Something new!!',
     options: [
@@ -30,7 +31,7 @@ const user = {
 
 function getLocation(location) {
     if (location) {
-        return <p>Location: {location}</p>
+        return <p>Location: {location}</p>;
     }
 }
 
